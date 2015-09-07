@@ -1,4 +1,18 @@
 Timeline {
-0: MotionEvent
-1000: ParticlEmitterEvent
+    0: camera Cam1
+    0: start CameraFollow plane
+    0: event MotionEvent plane {
+        Waypoint 0 0 0
+        Waypoint 10 0 0
+        Duration 5
+    }
+    1000: event ParticleEvent fire {
+        Duration 10
+    }
+    1000: event EmitAllParticleEvent explosion
+    1000: end CameraFollow plane
+    1000: camera Cam2
 }
+Duration fit / 20
+LoopMode Loop
+Speed 1
